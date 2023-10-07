@@ -17,9 +17,12 @@
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.20.4",
 		"@tailwindcss/typography": "^0.5.10",
+		"@types/d3": "^7.4.1",
 		"@typescript-eslint/eslint-plugin": "^6.0.0",
 		"@typescript-eslint/parser": "^6.0.0",
 		"autoprefixer": "^10.4.16",
+		"d3": "^7.8.5",
+		"dayjs": "^1.11.10",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte": "^2.30.0",
@@ -37,6 +40,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.0.0",
 		"tailwind-merge": "^1.14.0"
 	}

@@ -3,9 +3,7 @@
 	import DashboardSidebarItem from './dashboard-sidebar-item.svelte';
 	import Icon from '@iconify/svelte';
 
-	const slug = $page.params.accountId;
-
-	console.log(slug);
+	const accountId = $page.params.accountId;
 </script>
 
 <div
@@ -18,20 +16,20 @@
 	<div class="flex flex-col items-stretch justify-start gap-5">
 		<div class="flex flex-col items-stretch justify-start gap-2 px-3">
 			<p class="text-sm text-white-200">Management</p>
-			<DashboardSidebarItem link={`/1234/dashboard`}>
-				<Icon icon="fi:grid" />
+			<DashboardSidebarItem link={`/${accountId}/dashboard`}>
+				<Icon icon="feather:grid" width={16} height={16} />
 				Dashboard
 			</DashboardSidebarItem>
-			<DashboardSidebarItem link={`/1234/dashboard/posts`}>
-				<Icon icon="fi:file" />
+			<DashboardSidebarItem link={`/${accountId}/dashboard/posts`}>
+				<Icon icon="feather:file" width={16} height={16} />
 				Posts
 			</DashboardSidebarItem>
-			<DashboardSidebarItem link={`/1234/dashboard/schedule`}>
-				<Icon icon="fi:calculator" />
+			<DashboardSidebarItem link={`/${accountId}/dashboard/schedule`}>
+				<Icon icon="feather:calendar" width={16} height={16} />
 				Schedule
 			</DashboardSidebarItem>
-			<DashboardSidebarItem link={`/1234/dashboard/team`}>
-				<Icon icon="fi:users" />
+			<DashboardSidebarItem link={`/${accountId}/dashboard/team`}>
+				<Icon icon="feather:users" width={16} height={16} />
 				Team
 			</DashboardSidebarItem>
 			<div class="w-full border-b border-dark-200 pt-2" />
@@ -44,7 +42,7 @@
 				</div>
 			</div>
 			<DashboardSidebarItem link="/accountid/dashboard">
-				<Icon icon="fi:instagram" />
+				<Icon icon="feather:instagram" width={16} height={16} />
 				ArefEghbali.Web
 			</DashboardSidebarItem>
 		</div>
